@@ -7,8 +7,11 @@ EventCode=4624
 ---
 Shows which accounts log on successfully and how (interactive, network, remote desktop).
 
-## Failed logons (Event ID 4625)
+## Cleared security log (Event ID 1102)
 ---
-EventCode=4625
+EventCode="1102"
+| stats count, latest(_time) as last_cleared by Account_Name, host
+| convert ctime(last_cleared)
+| sort - last_cleared
 ---
-Shows failed logon attempts. Repeated failures from one source can indicate password guessing.
+Detects when the Security audit log is cleared, a common way to cover tracks.
