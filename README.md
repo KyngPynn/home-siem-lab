@@ -1,2 +1,2 @@
 # home-siem-lab
-small siem for home setup
+This was to create a small SIEM for my home setup that utilized Splunk Enterprise and to monitor alerts that could be problematic in enterprise spaces such as: Failed Login attempts, Successful Login attempts, and Unrecognized USB events
