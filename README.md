@@ -17,7 +17,7 @@ The SPL searches are in [`/queries`](queries/).
 
 ## Dashboards
 ![Failed logons](screenshots/failed-logins.png)
-![Successful logons](screenshots/successful-logins.png)
+![Successful logons](Successful Logins.png)
 
 ## What I learned
 - How Windows logs authentication events and how to search them with SPL
