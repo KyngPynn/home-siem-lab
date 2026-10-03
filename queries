@@ -1,0 +1,14 @@
+# SPL Queries
+
+## Successful logons (Event ID 4624)
+---
+* EventCode=4624
+| stats count by Account_Name, Logon_Type
+---
+Shows which accounts log on successfully and how (interactive, network, remote desktop).
+
+## Failed logons (Event ID 4625)
+---
+EventCode=4625
+---
+Shows failed logon attempts. Repeated failures from one source can indicate password guessing.
