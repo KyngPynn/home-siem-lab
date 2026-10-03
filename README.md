@@ -16,7 +16,7 @@ A small SIEM for my home network, built with **Splunk Enterprise**, to practice 
 The SPL searches are in [`/queries`](queries/).
 
 ## Dashboards
-![Failed logons](UnsuccessfulLogins.png)
+![Cleared Logs](ClearLogs.png)
 ![Successful logons](SuccessfulLogins.png)
 
 ## What I learned
