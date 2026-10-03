@@ -1,6 +1,29 @@
-# home-siem-lab
-This was to create a small SIEM for my home setup that utilized Splunk Enterprise and to monitor alerts that could be problematic in enterprise spaces such as: Failed Login attempts or Successful Login attempts
+# Home SIEM Lab
 
-We have a queries which is the queries I ran to find the desired event codes for each of the dashboards.
+A small SIEM for my home network, built with **Splunk Enterprise**, to practice monitoring Windows authentication events that matter in enterprise security.
 
-The 2 .png are images of the dashboard after the search and dashboards were created from the SPL searches.
+## Overview
+- **SIEM**: Splunk Enterprise on Windows
+- **Log source:** Windows Event Logs from my desktop [via Universal Forwarder / local input]
+- **Focus:** Authentication monitoring (successful and failed logons)
+
+## Detections
+| Event ID | Meaning | Why it matters |
+|----------|---------|----------------|
+| 4625 | Failed logon | Repeated failures can indicate password guessing |
+| 4624 | Successful logon | Helps spot unusual accounts, logon types, or times |
+
+The SPL searches are in [`/queries`](queries/).
+
+## Dashboards
+![Failed logons](screenshots/failed-logons.png)
+![Successful logons](screenshots/successful-logons.png)
+
+## What I learned
+- [e.g., how Windows logs authentication events and how to search them with SPL]
+- [e.g., how to turn a search into a dashboard panel]
+
+## Next steps
+- Add more log sources (e.g., Sysmon, router syslog)
+- Create alerts for repeated failed logons
+- Test detections with safe simulated activity
