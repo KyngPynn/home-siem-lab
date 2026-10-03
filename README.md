@@ -24,6 +24,6 @@ The SPL searches are in [`/queries`](queries/).
 - How to turn a search into a dashboard panel
 
 ## Next steps
-- Add more log sources (e.g., Sysmon, router syslog) as well as included more machines than the local host
+- Add more log sources (e.g., Sysmon, router syslog) as well as including more machines than the local host
 - Create alerts for repeated failed logons
 - Test detections with safe simulated activity
