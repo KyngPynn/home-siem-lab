@@ -4,7 +4,7 @@ A small SIEM for my home network, built with **Splunk Enterprise**, to practice 
 
 ## Overview
 - **SIEM**: Splunk Enterprise on Windows
-- **Log source:** Windows Event Logs from my desktop [via Universal Forwarder / local input]
+- **Log source:** Windows Event Logs from my desktop via local input
 - **Focus:** Authentication monitoring (successful and failed logons)
 
 ## Detections
@@ -20,10 +20,10 @@ The SPL searches are in [`/queries`](queries/).
 ![Successful logons](screenshots/successful-logons.png)
 
 ## What I learned
-- [e.g., how Windows logs authentication events and how to search them with SPL]
-- [e.g., how to turn a search into a dashboard panel]
+- How Windows logs authentication events and how to search them with SPL
+- How to turn a search into a dashboard panel
 
 ## Next steps
-- Add more log sources (e.g., Sysmon, router syslog)
+- Add more log sources (e.g., Sysmon, router syslog) as well as included more machines than the local host
 - Create alerts for repeated failed logons
 - Test detections with safe simulated activity
