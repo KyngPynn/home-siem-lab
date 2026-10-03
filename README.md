@@ -16,8 +16,8 @@ A small SIEM for my home network, built with **Splunk Enterprise**, to practice 
 The SPL searches are in [`/queries`](queries/).
 
 ## Dashboards
-![Cleared Logs](ClearLogs.png)
 ![Successful logons](SuccessfulLogins.png)
+![Cleared Logs](ClearLogs.png)
 
 ## What I learned
 - How Windows logs authentication events and how to search them with SPL
